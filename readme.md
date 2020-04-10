@@ -10,6 +10,5 @@ At the moment it simply displays a randomly chosen answer out of 20 possible ans
 
 TO DO:
 
-* add ADC temperature and voltage reading, to generate a seed for the RNG
 * have the generation of a new answer activated by the user: button or tilt switch (ideally an accelerometer)
 * when the generation is activated, make the answer appear, then disapperar after some time (default state: prompt screen)
