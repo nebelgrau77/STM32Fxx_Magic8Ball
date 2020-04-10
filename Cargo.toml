@@ -1,0 +1,29 @@
+[package]
+name = "magic8ball"
+version = "0.1.0"
+authors = ["nebelgrau <nebelgrau@gmx.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+cortex-m = "0.6"
+cortex-m-rt = "0.6"
+
+panic-halt = "0.2"
+
+stm32f0xx-hal = {version = "0.15", features = ["stm32f030xc", "rt"]}
+
+embedded-hal = "0.2"
+
+ssd1306 = {version = "0.3", features=["graphics"]}
+
+embedded-graphics = "0.6"
+
+rand = {version = "0.7", default-features = false, features = [ "small_rng" ]}
+
+[profile.release]
+debug = true
+lto = true
+opt-level = "z"
